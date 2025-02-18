@@ -1,0 +1,153 @@
+ /* general style */
+
+ html {
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2, h3, h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;    
+}
+/* 
+.wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+} */
+
+
+/* desktop view */
+
+/* body style */
+
+body {
+  background-color: hsl(275, 100%, 97%);
+  width: 100%;
+  height: 100%;
+}
+
+.blue--bg {
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  width: 100%;
+  height: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  position: relative;
+}
+
+
+/* faqs section */
+
+h4:hover {
+  cursor: pointer;
+  color: hsl(294, 27%, 58%);
+}
+
+.faqs--border {
+  border-bottom: solid hsl(292, 16%, 49%) 1px;
+  border-width: thin;
+}
+
+.faqs--subtext {
+text-wrap: wrap;
+}
+
+.faqs--logo {
+  max-width: 20px;
+  margin-right: 10px;
+}
+
+#faqs--section {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  height: auto;
+  margin: 0 10px;
+  font-size: 12px;
+  max-width: 340px;
+  position: relative;
+  top: 240px;
+}
+
+.faqs--text {
+  color: hsl(292, 42%, 14%);
+  text-wrap: wrap;
+}
+
+figure {
+margin: 0;
+}
+
+.faqs--title {
+  display: flex;
+  align-items: center;
+}
+
+.icon--minus {
+  content: url(./assets/images/icon-minus.svg);
+}
+
+.title--and--btn {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 16px;
+}
+
+.twenty--padding {
+padding-bottom: 20px;
+}
+
+.btn {
+max-width: 20px;
+}
+
+.zero--padding {
+padding-bottom: 0;
+}
+
+
+
+/* mobile view */
+
+@media screen and (max-width: 375px) {
+  .blue--bg {
+      background-image: url(./assets/images/background-pattern-mobile.svg);
+      height: 200px;
+  }
+
+  #faqs--section {
+    max-width: 220px;
+    top: 160px;
+  }
+}
